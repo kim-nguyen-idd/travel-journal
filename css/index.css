@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+.header {
+    background-color: black;
+
+}
+h1 {
+    color: white;
+    /* line-height: 1.2em; */
+    font-size: 2em;
+    text-align: center;
+    padding: 1.5em;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Modak', cursive;
+    font-size: 1.3em;
+}
+
+.city-name a {
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    display: none;
+}
+
+.city {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.city-name {
+    position: absolute;
+}
+
+.gallery {
+    display: grid; 
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.city img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.city:hover {
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+}
+
+.city:hover a {
+    display: block;
+}
+
+.city img {
+    position: relative; 
+    z-index: -1;
+}
